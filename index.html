@@ -2,26 +2,44 @@
 <html>
 <head>
 	<title>JS Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div id="result"></div>
 	<div>
-		<button onclick="myFunction()" class="btn" id="one">1</button>
-		<button onclick="myFunction()" class="btn" id="two">2</button>
-		<button onclick="myFunction()" class="btn" id="three">3</button>
-		<button onclick="myFunction()" class="btn" id="four">4</button>
-		<button onclick="myFunction()" class="btn" id="five">5</button>
-		<button onclick="myFunction()" class="btn" id="six">6</button>
-		<button onclick="myFunction()" class="btn" id="seven">7</button>
-		<button onclick="myFunction()" class="btn" id="eight">8</button>
-		<button onclick="myFunction()" class="btn" id="nine">9</button>
-		<button onclick="myFunction()" class="btn" id="zero">0</button>
-		<button onclick="myFunction()" class="btn" id="plus">+</button>
-		<button onclick="myFunction()" class="btn" id="minus">-</button>
-		<button onclick="myFunction()" class="btn" id="multiply">X</button>
-		<button onclick="myFunction()" class="btn" id="divide">/</button>
-		<button onclick="myFunction()" class="btn" id="equals">=</button>
-		<button onclick="myFunction()" class="btn" id="clear">C</button>
+		<button onclick="clickFunction(this.id)" class="btn" id="one">1</button>
+
+		<button onclick="clickFunction(this.id)" class="btn" id="two">2</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="three">3</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="four">4</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="five">5</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="six">6</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" 
+		id="seven">7</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="eight">8</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="nine">9</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" 
+		id="zero">0</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="plus">+</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="minus">-</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="multiply">X</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="divide">/</button>
+		
+		<button onclick="clickFunction(this.id)" class="btn" id="equals">=</button>
+		
+		<button onclick="clearFunction()" class="clrbtn" id="clear">C</button>
 	</div>
 <script src="app.js"></script>
 </body>
