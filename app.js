@@ -1,18 +1,7 @@
-window.onload = function() {
 
-
-//click button to display number or operator
-
-var calBtn = document.getElementsByClassName('btn');
 var result = document.getElementById('result');
 
-calBtn.onclick = clickFunction;
-
-}
-
-//create object to link ID, display and function together
-
-var btnObject = {
+var btnObj = {
 	"one" : '1',
 	"two" : '2',
 	"three" : '3',
@@ -26,24 +15,26 @@ var btnObject = {
 	"plus" : '&#43;',
 	"minus" : '&#45;',
 	"multiply" : '&#42;',
-	"divide" : '&#47',
-	"equals" : '&#61;'
+	"divide" : '&#47'
 }
 
+var elements = document.getElementsByClassName('btn');
 
-function clickFunction(clickedId){
-//get button ID somehow
-//	var x = btnID;
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', function(){numFunction(this.id)}, false);
+}
 
+function numFunction(clickedId){
 //get value of btnObject based on btn ID
-	result.innerHTML += btnObject[clickedId];
+	result.innerHTML += btnObj[clickedId];
 }
 
 function clearFunction(){
-//get button ID somehow
-//	var x = btnID;
-
 //get value of btnObject based on btn ID
 	result.innerHTML = '';
+}
+
+function equalFunction(){
+	result.innerHTML = eval(result.innerHTML);
 }
 
