@@ -4,25 +4,44 @@ body{
 }
 
 #result{
-	height: 40px;
-	width: 100%;
+	font-size: 60px;
+	height: 70px;
+	width: 320px;
+	padding-top: 20px;
 	text-align: center;
-
+	background-color: #e0ffff;
+	border-top-right-radius: 10px; 
+	border-top-left-radius: 10px;
+	border: 2px solid #ccc;
+	border-bottom: none;
 }
 
-#keypad{
-	text-align: center;
+.container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
 }
 
 button{
-	width:40px;
-	height: 40px;
+	width:80px;
+	height: 80px;
 	border-radius: 5px;
 	border: none;
 	margin:1px 1px 0 0;
 	font-size: 24px;
 	font-family: 'Arial', sans-serif;
 	background-color: #02a8f3;
+	border: 2px solid #ccc;
+	border-top: none;
+	border-right: none;
+}
+
+.num-btn{
+	background-color: #fff;
+
+}
+.equalbtn{
+	width: 240px;
 }
 
 #del{
