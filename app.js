@@ -48,15 +48,19 @@ var acct="";
 
 function numFunction(clickedId){
 //get value of btnObject based on btn ID
-	result.innerHTML += numObj[clickedId];
-	acct += numObj[clickedId];
-	acct.toString();
+	if((result.innerHTML).length <11){
+		result.innerHTML += numObj[clickedId];
+		acct += numObj[clickedId];
+		acct.toString();
+	}
 }
 
 function opFunction(clickedId){
 //get value of btnObject based on btn ID
-	result.innerHTML += opObj[clickedId][0];
-	acct += opObj[clickedId][1];
+	if((result.innerHTML).length <11){
+		result.innerHTML += opObj[clickedId][0];
+		acct += opObj[clickedId][1];
+	}
 }
 
 function equalFunction(e){
